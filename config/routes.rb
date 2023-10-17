@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  # get 'pages/home'
+  # get 'pages/index'
+  root 'pages#home'
+  get 'index' => 'pages#home'
+  
   resources :turmas
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
